@@ -1,4 +1,4 @@
-=== Animate On Scroll WP ===
+=== Dark Mode for bootScore ===
 
 Contributors: craftwerk
 
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Animate On Scroll Plugin for WordPress, Copyright 2020 Bastian Kreiter.
+Adds a dark mode to bootScore WordPress theme, Copyright 2020 Bastian Kreiter.
 
 
 == Installation ==
@@ -21,9 +21,7 @@ Animate On Scroll Plugin for WordPress, Copyright 2020 Bastian Kreiter.
 
 == Usage ==
 
-Use it in your HTML like this:
-
-<div data-aos="fade-up"></div>
+Use shortcode [dark-mode] to show the switch where you want.
 
 
 == Changelog ==

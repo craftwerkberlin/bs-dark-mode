@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) { 
+jQuery(document).ready(function ($) {
 
 
     // Dark mode
@@ -49,5 +49,37 @@ jQuery(document).ready(function ($) {
     init();
 
     // Dark Mode End
+
+
+    // Show on media queries in top-nav-module
+/*
+    if (window.matchMedia("(max-width: 991px)").matches) {
+        $(".top-module-1.d-none.d-lg-block .dark-mode-switch").remove();
+
+    }
+
+
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        $(".top-module-1.flex-fill.justify-content-end.d-flex.pr-3.d-lg-none .dark-mode-switch").remove();
+
+    }
+    */
+  
     
-    });
+     /*
+    if (window.matchMedia("(max-width: 991px)").matches) {
+$(".top-module-1.d-none.d-lg-block .dark-mode-switch").empty();
+    }
+    
+   
+        if (window.matchMedia("(min-width: 992px)").matches) {
+$(".top-module-1.flex-fill.justify-content-end.d-flex.pr-3.d-lg-none .dark-mode-switch").empty();
+    }
+    */
+    
+    // Show on media queries End
+    
+    
+    
+
+});

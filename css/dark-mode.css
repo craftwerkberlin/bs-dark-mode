@@ -1,11 +1,42 @@
+/* Switch */
+
+.dark-mode-switch .custom-switch .custom-control-label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f185 ";
+    color: #adb5bd;
+    font-size: .61rem;
+    white-space: pre;
+    text-align: right;
+    padding-right: .1rem;
+}
+
+.dark-mode-switch .custom-control-input:checked ~ .custom-control-label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f186";
+    color: #fff;
+    font-size: .61rem;
+    white-space: pre;
+    text-align: left;
+    padding-left: .15rem;
+}
+
+.dark-mode-switch .custom-switch {
+    padding-left: 2.7rem;
+}
+
+
+
+
 /* Dark Mode*/
 
 body.dark-theme {
-  color: var(--light);
-  background-color: var(--dark);
+    color: var(--light);
+    background-color: var(--dark);
 }
 
-.dark-theme .bg-light { 
+.dark-theme .bg-light {
     background-color: var(--dark) !important;
 }
 
@@ -17,31 +48,34 @@ body.dark-theme {
     color: var(--light);
 }
 
-.dark-theme .navbar-light .navbar-nav .active>.nav-link, .dark-theme .navbar-light .navbar-nav .nav-link.active, .dark-theme .navbar-light .navbar-nav .nav-link.show, .dark-theme .navbar-light .navbar-nav .show>.nav-link {
+.dark-theme .navbar-light .navbar-nav .active > .nav-link,
+.dark-theme .navbar-light .navbar-nav .nav-link.active,
+.dark-theme .navbar-light .navbar-nav .nav-link.show,
+.dark-theme .navbar-light .navbar-nav .show > .nav-link {
     color: #fff;
 }
 
-.dark-theme .navbar-collapse, .dark-theme .cart-right, .dark-theme .cart-loader {
-    background-color: var(--dark) !important; 
+.dark-theme .navbar-collapse,
+.dark-theme .cart-right,
+.dark-theme .cart-loader {
+    background-color: var(--dark) !important;
 }
 
 .dark-theme .dropdown-menu {
-    background-color: var(--dark); 
+    background-color: var(--dark);
 }
 
 .dark-theme .dropdown-item {
     color: var(--light);
 }
 
-.dark-theme .logo, .dark-theme .footer-logo {
+.dark-theme .logo,
+.dark-theme .footer-logo {
     filter: brightness(100);
 }
 
 .dark-theme .form-control {
     background-color: transparent;
 }
+
 /* Dark Mode End */
-
-
-
-

@@ -26,8 +26,7 @@
     padding-left: 2.7rem;
 }
 
-
-
+/* Switch End*/
 
 /* Dark Mode*/
 
@@ -76,6 +75,10 @@ body.dark-theme {
 
 .dark-theme .form-control {
     background-color: transparent;
+}
+
+.dark-theme .widget-area .card {
+    border: 1px solid rgba(0,0,0,.125) !important;
 }
 
 /* Dark Mode End */

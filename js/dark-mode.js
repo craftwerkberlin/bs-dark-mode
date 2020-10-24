@@ -50,8 +50,4 @@ jQuery(document).ready(function ($) {
     init();
     // Checked State Switch End
 
-
 });
-
-
-

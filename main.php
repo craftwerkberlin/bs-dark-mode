@@ -1,8 +1,8 @@
 <?php
 /*Plugin Name: bS Dark Mode
 Plugin URI: https://bootscore.me/plugins/dark-mode/
-Description: This plugin adds a dark mode to bootScore theme. Use shortcode [bs-dark-mode] to show the switch where you want.
-Version: 1.0.1
+Description: This plugin adds a dark mode to bootScore theme. Use shortcode [bs-dark-mode] to show the switch where you want. Use NOT the Top Nav Module Widget area. It won´t work there.
+Version: 1.0.2
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 License: GPLv2

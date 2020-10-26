@@ -1,0 +1,29 @@
+/* Switch */
+
+.dark-mode-switch .custom-switch .custom-control-label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f185 ";
+    color: #adb5bd;
+    font-size: .61rem;
+    white-space: pre;
+    text-align: right;
+    padding-right: .1rem;
+}
+
+.dark-mode-switch .custom-control-input:checked ~ .custom-control-label::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f186";
+    color: #fff;
+    font-size: .61rem;
+    white-space: pre;
+    text-align: left;
+    padding-left: .15rem;
+}
+
+.dark-mode-switch .custom-switch {
+    padding-left: 2.7rem;
+}
+
+/* Switch End*/

@@ -1,0 +1,320 @@
+/* Dark Theme*/
+
+:root {
+    --ultradark: #212529;
+}
+
+body {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+body.dark-theme {
+    color: var(--light);
+    background-color: var(--dark);
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.bg-light {
+    transition: background-color .3s ease-in-out;
+}
+
+.dark-theme .bg-light {
+    background-color: var(--ultradark) !important;
+    transition: background-color .3s ease-in-out;
+}
+
+.dark-theme .bg-white {
+    background-color: var(--dark) !important;
+}
+
+.dark-theme #preloader {
+    background-color: var(--dark) !important;
+}
+
+
+@media (max-width: 991px) {
+    .dark-theme .navbar-collapse {
+        background-color: var(--dark) !important;
+    }
+}
+
+.card {
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.dark-theme .card {
+    background-color: var(--dark);
+    border-color: var(--ultradark);
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    transition: color .3s ease-in-out;
+}
+
+.dark-theme .navbar-light .navbar-nav .nav-link {
+    color: var(--gray);
+    transition: color .3s ease-in-out;
+}
+
+.dark-theme .navbar-light .navbar-nav .active > .nav-link,
+.dark-theme .navbar-light .navbar-nav .nav-link.active,
+.dark-theme .navbar-light .navbar-nav .nav-link.show,
+.dark-theme .navbar-light .navbar-nav .show > .nav-link,
+.dark-theme .navbar-light .navbar-nav .nav-link:focus,
+.dark-theme .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.dark-theme .cart-right,
+.dark-theme .cart-loader {
+    background-color: var(--dark) !important;
+}
+
+.dark-theme .dropdown-menu {
+    background-color: var(--dark);
+}
+
+.dark-theme .dropdown-item {
+    color: var(--light);
+}
+
+.dark-theme .logo,
+.dark-theme .footer-logo {
+    filter: brightness(100);
+    transition: filter .3s ease-in-out;
+}
+
+.dark-theme .breadcrumb {
+    background-color: var(--ultradark) !important;
+}
+
+.dark-theme .page-link {
+    background-color: var(--dark);
+    border: 1px solid var(--ultradark);
+}
+
+.dark-theme .page-link:hover {
+    background-color: var(--ultradark);
+    border-color: var(--ultradark);
+}
+
+.dark-theme a.bg-light:focus,
+.dark-theme a.bg-light:hover {
+    background-color: var(--gray) !important;
+}
+
+.form-control {
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.dark-theme .form-control {
+    background-color: transparent;
+    border-color: var(--gray);
+    color: var(--light);
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out, color-color .3s ease-in-out;
+}
+
+.dark-theme .form-control::placeholder {
+    color: var(--gray);
+}
+
+
+.dark-theme .form-control:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.woocommerce table.shop_table {
+    transition: border-color .3s ease-in-out;
+}
+
+.dark-theme .woocommerce table.shop_table {
+    border-color: var(--ultradark);
+    transition: border-color .3s ease-in-out;
+}
+
+.woocommerce table.shop_table td {
+    transition: border-color .3s ease-in-out;
+}
+
+
+.dark-theme .woocommerce table.shop_table td {
+    border-color: var(--ultradark);
+    transition: border-color .3s ease-in-out;
+}
+
+
+.woocommerce-cart .cart-collaterals .cart_totals tr th {
+    transition: border-color .3s ease-in-out;
+}
+
+.dark-theme.woocommerce-cart .cart-collaterals .cart_totals tr th {
+    border-color: var(--ultradark);
+    transition: border-color .3s ease-in-out;
+}
+
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+    transition: border-color .3s ease-in-out;
+}
+
+.dark-theme .woocommerce table.shop_table tbody th,
+.dark-theme .woocommerce table.shop_table tfoot td,
+.dark-theme .woocommerce table.shop_table tfoot th {
+    border-color: var(--ultradark);
+    transition: border-color .3s ease-in-out;
+}
+
+
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+    transition: background-color .3s ease-in-out;
+}
+
+.dark-theme #add_payment_method #payment div.payment_box,
+.dark-theme .woocommerce-cart #payment div.payment_box,
+.dark-theme .woocommerce-checkout #payment div.payment_box {
+    background-color: var(--ultradark);
+    transition: background-color .3s ease-in-out;
+}
+
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+    transition: border .3s ease-in-out;
+}
+
+.dark-theme #add_payment_method #payment div.payment_box::before,
+.dark-theme .woocommerce-cart #payment div.payment_box::before,
+.dark-theme .woocommerce-checkout #payment div.payment_box::before {
+    border: 1em solid var(--ultradark);
+    transition: border .3s ease-in-out;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+}
+
+.border-bottom {
+    transition: border-bottom .3s ease-in-out;
+}
+
+.dark-theme .border-bottom {
+    border-bottom: 1px solid var(--ultradark) !important;
+    transition: border-bottom .3s ease-in-out;
+}
+
+.dark-theme footer .border-bottom {
+    border-bottom: 1px solid var(--dark) !important;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+    .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+        transition: background-color .3s ease-in-out;
+    }
+
+    .dark-theme .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+    .dark-theme .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+        background-color: var(--ultradark);
+        transition: background-color .3s ease-in-out;
+    }
+}
+
+.list-group-item {
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out !important;
+}
+
+.dark-theme .list-group-item {
+    background-color: var(--dark);
+    border-color: var(--ultradark);
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.list-group-item-action {
+    transition: color .3s ease-in-out;
+}
+
+
+.dark-theme .list-group-item-action {
+    color: currentColor;
+    transition: color .3s ease-in-out;
+}
+
+.bootscore-info.bg-light {
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.dark-theme .bootscore-info.bg-light {
+    background-color: var(--ultradark);
+    border-color: var(--dark) !important;
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.woocommerce table.shop_attributes tr:nth-child(even) td,
+.woocommerce table.shop_attributes tr:nth-child(even) th {
+    transition: background .3s ease-in-out;
+}
+
+.dark-theme.woocommerce table.shop_attributes tr:nth-child(even) td,
+.dark-theme.woocommerce table.shop_attributes tr:nth-child(even) th {
+    background: var(--ultradark);
+    transition: background .3s ease-in-out;
+}
+
+.dark-theme.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    background: var(--dark);
+    z-index: 2;
+    border-bottom-color: var(--dark);
+}
+
+.dark-theme.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    border: 1px solid var(--ultradark);
+    background-color: var(--ultradark);
+}
+
+.dark-theme.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    border-bottom: 1px solid var(--ultradark);
+}
+
+.dark-theme.woocommerce table.shop_attributes {
+    border-color: var(--ultradark);
+}
+
+
+.dark-theme #reviews #comments ol.commentlist li .comment-text {
+    border-color: var(--ultradark) !important;
+}
+
+.dark-theme.woocommerce div.product .woocommerce-tabs ul.tabs li.active::before {
+    display: none;
+}
+
+.dark-theme .media-body.p-3.rounded.border {
+    border-color: var(--ultradark) !important;
+}
+
+.dark-theme .dropdown-item:focus, .dark-theme .dropdown-item:hover {
+    color: var(--dark);
+}
+
+.dark-theme .custom-file-label {
+    color: var(--gray);
+    background-color: var(--dark);
+    border-color: var(--gray);
+}
+
+.dark-theme .custom-select {
+    color: var(--gray);
+    border-color: var(--gray);
+    background: var(--dark) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%236c757d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+
+/* Dark Theme End */

@@ -9,40 +9,21 @@ License: GPLv2
 */
 
 
-/*
 // Register Styles and Scripts
 function dm_scripts() {
 
     wp_enqueue_script( 'darkmode-js', plugins_url( '/js/dark-mode.js', __FILE__ ));
     
-    
-    wp_register_style( 'darkmode-css', plugins_url('css/dark-mode.css', __FILE__) );
-        wp_enqueue_style( 'darkmode-css' );
-        
-        }
-    
-add_action('wp_enqueue_scripts','dm_scripts');
-*/
-
-
-// Register Styles and Scripts
-function dm_scripts() {
-
-    wp_enqueue_script( 'darkmode-js', plugins_url( '/js/dark-mode.js', __FILE__ ));
+    wp_register_style( 'switch', plugins_url('css/switch.css', __FILE__) );
+        wp_enqueue_style( 'switch' );
     
     
-    wp_register_style( 'darkmode-css', plugins_url('css/dark-mode.css', __FILE__) );
-        wp_enqueue_style( 'darkmode-css' );
+    wp_register_style( 'dark-theme', plugins_url('css/dark-theme.css', __FILE__) );
+        wp_enqueue_style( 'dark-theme' );
         
         }
     
 add_action('wp_enqueue_scripts','dm_scripts', 100);
-
-
-
-
-
-
 
 
 // Add Shortcode to show the switch
@@ -50,14 +31,14 @@ function dark_mode_shortcode() {
     ob_start();
     ?>
 
-        <div class="dark-mode-switch">
+<div class="dark-mode-switch">
 
-            <div class="custom-control custom-switch">
-                <input type="checkbox" class="custom-control-input btn-toggle" id="dark-mode">
-                <label class="custom-control-label" for="dark-mode"></label>
-            </div>
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input btn-toggle" id="dark-mode">
+        <label class="custom-control-label" for="dark-mode"></label>
+    </div>
 
-        </div>
+</div>
 
 <?php
     return ob_get_clean();

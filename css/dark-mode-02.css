@@ -35,66 +35,31 @@
 
 /* Switch End*/
 
-
-
-
-/* Dark Theme*/
-
-body {
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
-}
-
+/* Dark Mode*/
 
 body.dark-theme {
     color: var(--light);
     background-color: var(--dark);
-    transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.bg-light {
-    transition: background-color .3s ease-in-out;
-}
-
-.dark-theme .bg-light {
+.dark-theme .bg-light,
+.dark-theme .navbar-collapse {
     background-color: var(--ultradark) !important;
-    transition: background-color .3s ease-in-out;
-}
-
-.dark-theme .bg-white {
-    background-color: var(--dark) !important;
-}
-
-
-@media (max-width: 991px) {
-    .dark-theme .navbar-collapse {
-        background-color: var(--dark) !important;
-    }
-}
-
-.card {
-    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .dark-theme .card {
     background-color: var(--dark);
     border-color: var(--ultradark);
-    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    transition: color .3s ease-in-out;
 }
 
 .dark-theme .navbar-light .navbar-nav .nav-link {
-    color: var(--gray);
-    transition: color .3s ease-in-out;
+    color: var(--light);
 }
 
 .dark-theme .navbar-light .navbar-nav .active > .nav-link,
 .dark-theme .navbar-light .navbar-nav .nav-link.active,
 .dark-theme .navbar-light .navbar-nav .nav-link.show,
-.dark-theme .navbar-light .navbar-nav .show > .nav-link,
-.dark-theme .navbar-light .navbar-nav .nav-link:focus, .dark-theme .navbar-light .navbar-nav .nav-link:hover {
+.dark-theme .navbar-light .navbar-nav .show > .nav-link {
     color: #fff;
 }
 
@@ -114,9 +79,11 @@ body.dark-theme {
 .dark-theme .logo,
 .dark-theme .footer-logo {
     filter: brightness(100);
-    transition: filter .3s ease-in-out;
 }
 
+.dark-theme .form-control {
+    background-color: transparent;
+}
 
 .dark-theme .breadcrumb {
     background-color: var(--ultradark) !important;
@@ -136,39 +103,4 @@ body.dark-theme {
     background-color: var(--gray) !important;
 }
 
-
-.form-control {
-    transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-}
-
-.dark-theme .form-control {
-    background-color: transparent;
-    border-color: var(--gray);
-    color: var(--light);
-    transition: background-color .3s ease-in-out, border-color .3s ease-in-out, color-color .3s ease-in-out;
-}
-
-.dark-theme .form-control::placeholder {
-    color: var(--gray);
-}
-
-
-.dark-theme .form-control:focus {
-    color: #ffffff;
-    background-color: transparent;
-}
-
-
-
-.woocommerce table.shop_table {
-    transition: border-color .3s ease-in-out;
-}
-
-.dark-theme .woocommerce table.shop_table {
-    border-color: var(--ultradark);
-    transition: border-color .3s ease-in-out;
-}
-
-
-
-/* Dark Theme End */
+/* Dark Mode End */

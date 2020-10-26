@@ -60,10 +60,11 @@ body.dark-theme {
     transition: background-color .3s ease-in-out;
 }
 
-.dark-theme .bg-white {
+/*
+.dark-theme #preloader {
     background-color: var(--dark) !important;
 }
-
+*/
 
 @media (max-width: 991px) {
     .dark-theme .navbar-collapse {

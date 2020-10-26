@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
-    
-    
-    // Dark theme
+
+
+    // Dark mode
     const btn = document.querySelector(".btn-toggle");
 
     const currentTheme = localStorage.getItem("theme");
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
         }
         localStorage.setItem("theme", theme);
     });
-    // Dark theme End
+    // Dark Mode End
 
 
 
@@ -50,5 +50,4 @@ jQuery(document).ready(function ($) {
     init();
     // Checked State Switch End
 
-    
 });

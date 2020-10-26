@@ -9,7 +9,7 @@ License: GPLv2
 */
 
 
-/*
+
 // Register Styles and Scripts
 function dm_scripts() {
 
@@ -22,26 +22,6 @@ function dm_scripts() {
         }
     
 add_action('wp_enqueue_scripts','dm_scripts');
-*/
-
-
-// Register Styles and Scripts
-function dm_scripts() {
-
-    wp_enqueue_script( 'darkmode-js', plugins_url( '/js/dark-mode.js', __FILE__ ));
-    
-    
-    wp_register_style( 'darkmode-css', plugins_url('css/dark-mode.css', __FILE__) );
-        wp_enqueue_style( 'darkmode-css' );
-        
-        }
-    
-add_action('wp_enqueue_scripts','dm_scripts', 100);
-
-
-
-
-
 
 
 

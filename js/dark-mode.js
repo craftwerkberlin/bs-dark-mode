@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
-    
-    
+        
     // Dark theme
     const btn = document.querySelector(".btn-toggle");
 
@@ -48,13 +47,5 @@ jQuery(document).ready(function ($) {
 
     init();
     // Checked State Switch End
-
-    
-    // Remove .bg-white from #preloader
-    if ($('body').hasClass('dark-theme')) {
-        $('#preloader').removeClass('bg-white');
-    }
-    // Remove .bg-white from #preloader End
-
     
 });

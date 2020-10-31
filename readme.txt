@@ -5,7 +5,7 @@ Contributors: craftwerk
 Requires at least: 4.5
 Tested up to: 5.5.1
 Requires PHP: 5.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,10 @@ Use shortcode [bs-dark-mode] to show the switch where you want.
 
 
 == Changelog ==
+
+    = 1.0.3 - October 31 2020 =
+    
+        * Stored user preferences by cookie to avoid a brief flicker of light-mode when reloading a page.
 
     = 1.0.2 - October 24 2020 =
     

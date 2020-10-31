@@ -17,20 +17,6 @@ body.dark-theme {
     background-color: var(--dark) !important;
 }
 
-/*
-.dark-theme #preloader {
-    background-color: var(--dark) !important;
-}
-*/
-
-/*
-@media (max-width: 991px) {
-    .dark-theme .navbar-collapse {
-        background-color: var(--dark) !important;
-    }
-}
-*/
-
 @media (max-width: 991px) {
     .dark-theme .vert-menu {
         background-color: var(--dark);
@@ -112,7 +98,6 @@ body.dark-theme {
     color: var(--gray);
 }
 
-
 .dark-theme .form-control:focus {
     color: #ffffff;
     background-color: transparent;
@@ -160,6 +145,7 @@ body.dark-theme {
 }
 
 @media (max-width: 768px) {
+
     .dark-theme .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
     .dark-theme .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
         background-color: var(--ultradark);
@@ -230,7 +216,7 @@ body.dark-theme {
 .dark-theme .custom-select {
     color: var(--gray);
     border-color: var(--gray);
-    background: var(--dark) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%236c757d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%236c757d' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
 }
 
 .dark-theme .woocommerce-mini-cart-item.border-top {

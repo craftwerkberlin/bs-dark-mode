@@ -1,5 +1,5 @@
-jQuery(function($) {
-    
+jQuery(function ($) {
+
     //Create the cookie object
     var cookieStorage = {
         setCookie: function setCookie(key, value, time, path) {
@@ -21,7 +21,7 @@ jQuery(function($) {
     };
 
     //Click on dark-mode switch. Add dark-theme classto body. Store user preference through sessions
-    $('#dark-mode').click(function() {
+    $('#dark-mode').click(function () {
         //Show either moon or sun
         $('#dark-mode').toggleClass('active');
         //If dark mode is selected
@@ -31,7 +31,7 @@ jQuery(function($) {
             cookieStorage.setCookie('bS-Dark-Mode', 'true', 2628000000, '/');
         } else {
             $('body').removeClass('dark-theme');
-            setTimeout(function() {
+            setTimeout(function () {
                 cookieStorage.removeCookie('bS-Dark-Mode');
             }, 100);
         }
@@ -42,7 +42,5 @@ jQuery(function($) {
         $('body').addClass('dark-theme');
         $('#dark-mode').addClass('active');
         $('#dark-mode').prop('checked', true);
-    } 
-    
-    
+    }
 });
